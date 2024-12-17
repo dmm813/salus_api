@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Salus_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+344dc5dc6cf58e21a9957a4214de4b2c256fedb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Salus_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Salus_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
