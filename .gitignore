@@ -194,3 +194,4 @@ FakesAssemblies/
 
 /.sonarqube
 coverage.opencover.xml
+/Salus_Application/IApplication.cs
