@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Salus_Core.DAL
 {
-    public  class UsuarioDAL:InterfaceDAL<Usuario>
+    public class UsuarioDAL : InterfaceDAL<Usuario>
     {
         private string _consulta = "";
         private ConexaoDAL _conexaoDAL = new ConexaoDAL();
@@ -117,6 +117,11 @@ namespace Salus_Core.DAL
         public int RetornaMaxCodigo()
         {
             throw new NotImplementedException();
+        }
+
+        public string IsNullValue(string s)
+        {
+            return string.IsNullOrWhiteSpace(s) ? " " : s;
         }
     }
 }

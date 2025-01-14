@@ -3,7 +3,7 @@ using Salus_Core.Dominio;
 
 namespace Salus_Core.DAL
 {
-    public class LogDAL:InterfaceDAL<LogSistema>
+    public class LogDAL : InterfaceDAL<LogSistema>
     {
         public void Editar(LogSistema obj)
         {
@@ -17,6 +17,11 @@ namespace Salus_Core.DAL
 
        
         public void Inserir(LogSistema obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string IsNullValue(string s)
         {
             throw new NotImplementedException();
         }

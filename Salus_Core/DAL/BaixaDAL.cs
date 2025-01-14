@@ -49,7 +49,11 @@ namespace Salus_Core.DAL
         public List<BaixaServico> ListaBaixaServicoXML(int cod)
         {
             throw new NotImplementedException();
-        } 
-        
+        }
+
+        public string IsNullValue(string s)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -14,5 +14,6 @@ namespace Salus_Core.DAL
         List<T> Listar();
         List<T> SelecionarPorCodigo(T obj);
         int RetornaMaxCodigo();
+        string IsNullValue(string s);
     }
 }

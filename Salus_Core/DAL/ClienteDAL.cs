@@ -126,14 +126,16 @@ namespace Salus_Core.DAL
                 DataTable tabela = _conexaoDAL.GetResultado(_consulta);
                 foreach (DataRow dr in tabela.Rows)
                 {
+
                     retorno.Add(
                         new Cliente
                         {
-                            IdCliente = int.Parse(dr["idCliente"].ToString()),
-                            CodCliente = int.Parse(dr["codCliente"].ToString()),
-                            Nome = dr["nome"].ToString(),
+                            IdCliente = int.Parse(this.IsNullValue(dr["idCliente"].ToString())),
+                            CodCliente = int.Parse(this.IsNullValue(dr["codCliente"].ToString())),
+                            Nome = this.IsNullValue(dr["nome"].ToString()),
                         }
                     );
+
                 }
             }
             catch (Exception ex)
@@ -163,6 +165,10 @@ namespace Salus_Core.DAL
         public ClienteMunicipioUF SelecionaClienteMuncipioUFPorID(int cod)
         {
             throw new NotImplementedException();
+        }
+        public string IsNullValue(string? s)
+        {
+            return string.IsNullOrWhiteSpace(s) ? " " : s;
         }
     }
 }

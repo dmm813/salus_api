@@ -24,6 +24,11 @@ namespace Salus_Core.DAL
             throw new NotImplementedException();
         }
 
+        public string IsNullValue(string s)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Venda> Listar()
         {
             throw new NotImplementedException();
