@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Projetos\\Salus_20\\Salus_2.0\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4F4DA4CE-B9E2-4EB2-95A7-982CE2BB6B80}|Salus_API\\Salus_API.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4DA4CE-B9E2-4EB2-95A7-982CE2BB6B80}|Salus_API\\Salus_API.csproj|solutionrelative:salus_api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{38F3CDAD-1B61-4040-B582-D06C9C714145}|Salus_Application\\Salus_Application.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_application\\applicationusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38F3CDAD-1B61-4040-B582-D06C9C714145}|Salus_Application\\Salus_Application.csproj|solutionrelative:salus_application\\applicationusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dominio\\envioitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\dominio\\envioitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4DA4CE-B9E2-4EB2-95A7-982CE2BB6B80}|Salus_API\\Salus_API.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4DA4CE-B9E2-4EB2-95A7-982CE2BB6B80}|Salus_API\\Salus_API.csproj|solutionrelative:salus_api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38F3CDAD-1B61-4040-B582-D06C9C714145}|Salus_Application\\Salus_Application.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_application\\iapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 23,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EnvioItem.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\Dominio\\EnvioItem.cs",
               "RelativeDocumentMoniker": "Salus_Core\\Dominio\\EnvioItem.cs",
@@ -289,13 +289,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ApplicationUsuario.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Application\\ApplicationUsuario.cs",
               "RelativeDocumentMoniker": "Salus_Application\\ApplicationUsuario.cs",
               "ToolTip": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Application\\ApplicationUsuario.cs",
               "RelativeToolTip": "Salus_Application\\ApplicationUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T12:59:45.689Z",
               "EditorCaption": ""
@@ -376,13 +376,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_API\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Salus_API\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_API\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Salus_API\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T13:11:10.865Z",
               "EditorCaption": ""

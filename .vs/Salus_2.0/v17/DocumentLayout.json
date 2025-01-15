@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Projetos\\Salus_20\\Salus_2.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38F3CDAD-1B61-4040-B582-D06C9C714145}|Salus_Application\\Salus_Application.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_application\\applicationusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38F3CDAD-1B61-4040-B582-D06C9C714145}|Salus_Application\\Salus_Application.csproj|solutionrelative:salus_application\\applicationusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dal\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\dal\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dominio\\envioitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\dominio\\envioitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dal\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\dal\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F3CDAD-1B61-4040-B582-D06C9C714145}|Salus_Application\\Salus_Application.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_application\\applicationusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F3CDAD-1B61-4040-B582-D06C9C714145}|Salus_Application\\Salus_Application.csproj|solutionrelative:salus_application\\applicationusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F4DA4CE-B9E2-4EB2-95A7-982CE2BB6B80}|Salus_API\\Salus_API.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dal\\interfacedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\dal\\interfacedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dal\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\dal\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dominio\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dal\\ordemservicodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\dal\\ordemservicodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dal\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\dal\\logdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dal\\empresadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -159,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "VendaDAL.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\VendaDAL.cs",
               "RelativeDocumentMoniker": "Salus_Core\\DAL\\VendaDAL.cs",
@@ -185,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "InterfaceDAL.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\InterfaceDAL.cs",
               "RelativeDocumentMoniker": "Salus_Core\\DAL\\InterfaceDAL.cs",
@@ -198,20 +198,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "UsuarioDAL.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\UsuarioDAL.cs",
               "RelativeDocumentMoniker": "Salus_Core\\DAL\\UsuarioDAL.cs",
               "ToolTip": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\UsuarioDAL.cs",
               "RelativeToolTip": "Salus_Core\\DAL\\UsuarioDAL.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwA8AAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T14:06:57.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BaixaDAL.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\BaixaDAL.cs",
               "RelativeDocumentMoniker": "Salus_Core\\DAL\\BaixaDAL.cs",
@@ -237,20 +237,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "LogDAL.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\LogDAL.cs",
               "RelativeDocumentMoniker": "Salus_Core\\DAL\\LogDAL.cs",
               "ToolTip": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\LogDAL.cs",
               "RelativeToolTip": "Salus_Core\\DAL\\LogDAL.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwBQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T16:50:32.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "OrdemServicoDAL.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\OrdemServicoDAL.cs",
               "RelativeDocumentMoniker": "Salus_Core\\DAL\\OrdemServicoDAL.cs",
@@ -263,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ClienteDAL.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\ClienteDAL.cs",
               "RelativeDocumentMoniker": "Salus_Core\\DAL\\ClienteDAL.cs",
@@ -276,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IApplication.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Application\\IApplication.cs",
               "RelativeDocumentMoniker": "Salus_Application\\IApplication.cs",
@@ -289,20 +289,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ApplicationUsuario.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Application\\ApplicationUsuario.cs",
               "RelativeDocumentMoniker": "Salus_Application\\ApplicationUsuario.cs",
               "ToolTip": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Application\\ApplicationUsuario.cs",
               "RelativeToolTip": "Salus_Application\\ApplicationUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T12:59:45.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\Dominio\\Usuario.cs",
               "RelativeDocumentMoniker": "Salus_Core\\Dominio\\Usuario.cs",
@@ -376,13 +376,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_API\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Salus_API\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_API\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Salus_API\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T13:11:10.865Z",
               "EditorCaption": ""
