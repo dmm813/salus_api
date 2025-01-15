@@ -53,9 +53,9 @@ namespace Salus_Core
                 conexao = new SqlConnection(stringDeConexao);
                 conexao.Open();
             }
-            catch
+            catch(Exception ex)
             {
-                Console.WriteLine("Sua conexão ainda não está configurada!");
+                Console.WriteLine("Sua conexão ainda não está configurada!"+ex.Message);
             }
         }
 

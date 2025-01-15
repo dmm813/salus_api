@@ -25,7 +25,7 @@ namespace WinFormsLibrary1 {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source =.\\SQL2008; Initial Catalog = SalusOS; User ID =sa; Password=DD1t3c")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source = \\SALUSSVR; Initial Catalog = SALUSOS; User ID =sa; Password=DD1t3c")]
         public string conexao {
             get {
                 return ((string)(this["conexao"]));

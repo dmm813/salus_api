@@ -2,6 +2,7 @@
 using Salus_Core.Util;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.Remoting;
 using System.Text;
@@ -47,14 +48,16 @@ namespace Salus_Core.DAL
                       "," + obj.AcEditar +
                       "," + obj.IDNivelAcesso+
                     ")";
+                ConexaoDAL.Open();
                 if (ConexaoDAL.ExecutarConsulta(_consulta))
                 {
-                    ControleLog.InsereLog(1, "USUARIO", "SUCESSO", DateTime.Now);
+                    Console.WriteLine("Sei La");// ControleLog.InsereLog(1, "USUARIO", "SUCESSO", DateTime.Now);
                 }
+                ConexaoDAL.Close();
             }
             catch (Exception ex) 
             {
-                ControleLog.InsereLog(1, "USUARIO", ex.Message, DateTime.Now);
+                Console.WriteLine("Sei La"); //ControleLog.InsereLog(1, "USUARIO", ex.Message, DateTime.Now);
                 return;
             }
 
@@ -116,10 +119,34 @@ namespace Salus_Core.DAL
 
         public int RetornaMaxCodigo()
         {
-            throw new NotImplementedException();
+            int retorno = 0;
+
+            try
+            {
+                _consulta = "select Max(codUsuario) as mascod from Usuario";
+                ConexaoDAL.Open();
+                DataTable tabela = _conexaoDAL.GetResultado(_consulta);
+                foreach (DataRow dr in tabela.Rows) 
+                {
+                    retorno = int.Parse(IsNullValue(dr["maxcod"].ToString()));
+                }
+                if (ConexaoDAL.ExecutarConsulta(_consulta))
+                {
+                    //ControleLog.InsereLog(2, "USUARIO", "SUCESSO", DateTime.Now);
+                }
+                ConexaoDAL.Close();
+            }
+
+            catch (Exception ex)
+            {
+
+                ControleLog.InsereLog(2, "USUARIO", ex.Message, DateTime.Now);
+                
+            }
+            return retorno;
         }
 
-        public string IsNullValue(string s)
+        public string IsNullValue(string? s)
         {
             return string.IsNullOrWhiteSpace(s) ? " " : s;
         }
