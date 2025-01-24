@@ -1,4 +1,5 @@
-﻿using Salus_Core.Dominio;
+﻿
+using Salus_Core.Dominio;
 using Salus_Core.Util;
 using System;
 using System.Collections.Generic;
@@ -24,10 +25,11 @@ namespace Salus_Core.DAL
             return 0;
         }
 
-        public void Inserir(Usuario obj)
+        public  void Inserir(Usuario obj)
         {
             try
             {
+                var cod = this.RetornaMaxCodigo() + 1;
 
                 _consulta = "INSERT INTO [dbo].[Usuario]" +
                     "       ([codUsuario]," +
@@ -39,16 +41,18 @@ namespace Salus_Core.DAL
                     "       [acEditar]," +
                     "       [idNivelAcesso])" +
                     "VALUES" +
-                    "(" + this.RetornaMaxCodigo() + 1 +
+                    "(" + cod +
                       "," + obj.Login +
                       "," + obj.Senha +
                       "," + obj.Exclusao +
                       "," + obj.AcInserir +
                       "," + obj.AcExcluir +
                       "," + obj.AcEditar +
-                      "," + obj.IDNivelAcesso+
+                      "," + obj.IDNivelAcesso +
                     ")";
                 ConexaoDAL.Open();
+
+
                 if (ConexaoDAL.ExecutarConsulta(_consulta))
                 {
                     Console.WriteLine("Sei La");// ControleLog.InsereLog(1, "USUARIO", "SUCESSO", DateTime.Now);
@@ -57,7 +61,7 @@ namespace Salus_Core.DAL
             }
             catch (Exception ex) 
             {
-                Console.WriteLine("Sei La"); //ControleLog.InsereLog(1, "USUARIO", ex.Message, DateTime.Now);
+                Console.WriteLine("Sei La" + ex); //ControleLog.InsereLog(1, "USUARIO", ex.Message, DateTime.Now);
                 return;
             }
 
@@ -123,7 +127,7 @@ namespace Salus_Core.DAL
 
             try
             {
-                _consulta = "select Max(codUsuario) as mascod from Usuario";
+                _consulta = "select max(codusuario) as maxcod from Usuario";
                 ConexaoDAL.Open();
                 DataTable tabela = _conexaoDAL.GetResultado(_consulta);
                 foreach (DataRow dr in tabela.Rows) 
