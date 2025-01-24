@@ -14,3 +14,4 @@ C:\Projetos\Salus_20\Salus_2.0\Salus_Application\obj\Debug\net8.0\Salus_Applicat
 C:\Projetos\Salus_20\Salus_2.0\Salus_Application\obj\Debug\net8.0\refint\Salus_Application.dll
 C:\Projetos\Salus_20\Salus_2.0\Salus_Application\obj\Debug\net8.0\Salus_Application.pdb
 C:\Projetos\Salus_20\Salus_2.0\Salus_Application\obj\Debug\net8.0\ref\Salus_Application.dll
+C:\Projetos\Salus_20\Salus_2.0\Salus_Application\obj\Debug\net8.0\Salus_Application.sourcelink.json
