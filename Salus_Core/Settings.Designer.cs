@@ -25,8 +25,9 @@ namespace WinFormsLibrary1 {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        //[global::System.Configuration.DefaultSettingValueAttribute(@"Server=.\SALUSSVR;DataBase=SALUSOS;User Id=sa;Password=DD1t3c;Trusted_Connection=True")]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"Server=localhost,1433;DataBase=SALUSOS;User Id=sa;Password=S4lu2_0s; TrustServerCertificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"Server=.\SALUSSVR;DataBase=SALUSOS;User Id=sa;Password=DD1t3c;Trusted_Connection=True;TrustServerCertificate=true")]
+        //[global::System.Configuration.DefaultSettingValueAttribute(@"Initial Catalog=.\SALUSSVR;DataBase=SALUSOS;User Id=sa;Password=DD1t3c;Trusted_Connection=True")]
+        //[global::System.Configuration.DefaultSettingValueAttribute(@"Server=SVRDBSALUS,1433;DataBase=SALUSOS;User Id=sa;Password=S4lu2_0s; TrustServerCertificate=True")]
         public string conexao {
             get {
                 return ((string)(this["conexao"]));
