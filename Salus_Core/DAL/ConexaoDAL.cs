@@ -4,6 +4,7 @@ using Salus_Core.Util;
 using System;
 using WinFormsLibrary1;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace Salus_Core
 {
@@ -81,6 +82,7 @@ namespace Salus_Core
         {
             try
             {
+                Open();
 
                 comando = new SqlCommand();
                 comando.Connection = conexao;
@@ -90,6 +92,7 @@ namespace Salus_Core
                 int resultado = comando.ExecuteNonQuery();
                 return true;
 
+                Close();
             }
             catch (Exception ex)
             {
@@ -220,7 +223,7 @@ namespace Salus_Core
         public DataTable GetResultado(string consulta)
         {
             DataTable resultado = new DataTable();
-            SqlDataReader reader = comando.ExecuteReader();
+           
             try
             {
 
@@ -228,8 +231,9 @@ namespace Salus_Core
                 comando.Connection = conexao;
                 comando.CommandText = consulta;
                 comando.CommandType = CommandType.Text;
+                SqlDataReader reader = comando.ExecuteReader();
 
-                reader = comando.ExecuteReader(CommandBehavior.CloseConnection);
+                //reader = comando.ExecuteReader(CommandBehavior.CloseConnection);
                 resultado.Load(reader, LoadOption.OverwriteChanges);
                 reader.Close();
                 reader.Dispose();
