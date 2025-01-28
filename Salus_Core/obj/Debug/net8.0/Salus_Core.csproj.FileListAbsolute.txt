@@ -1,0 +1,14 @@
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\Salus_Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\Salus_Core.AssemblyInfoInputs.cache
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\Salus_Core.AssemblyInfo.cs
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\Salus_Core.csproj.CoreCompileInputs.cache
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\bin\Debug\net8.0\Salus_Core.deps.json
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\bin\Debug\net8.0\Salus_Core.dll
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\bin\Debug\net8.0\Salus_Core.pdb
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\Salus_Core.csproj.AssemblyReference.cache
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\Salus_Core.dll
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\refint\Salus_Core.dll
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\Salus_Core.pdb
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\ref\Salus_Core.dll
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\bin\Debug\net8.0\Salus_Core.dll.config
+C:\Projetos\Salus_20\Salus_2.0\Salus_Core\obj\Debug\net8.0\Salus_Core.sourcelink.json
