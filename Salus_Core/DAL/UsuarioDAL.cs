@@ -17,8 +17,37 @@ namespace Salus_Core.DAL
         private ConexaoDAL _conexaoDAL = new ConexaoDAL();
         public List<Usuario> SelecionaUsuarioLoginSenha(Usuario user)
         {
-            return new List<Usuario>();
-            
+            List<Usuario> retorno = new List<Usuario>();
+            try
+            {
+                _consulta = "select * from Usuario where login = '"+ user.Login + "' and senha = '"+user.Senha+"'" ;
+                ConexaoDAL.Open();
+                DataTable dt = new DataTable();
+                foreach (DataRow row in dt.Rows)
+                {
+                    retorno.Add(new Usuario()
+                    {
+                        AcEditar = Convert.ToBoolean(row["acEdidar"].ToString()),
+                        AcExcluir = Convert.ToBoolean(row["acExcluir"].ToString()),
+                        AcInserir = Convert.ToBoolean(row["acInserir"].ToString()),
+                        IDUsuario = int.Parse(IsNullValue(row["idUsuario"].ToString())),
+                        CODUsuario = int.Parse(IsNullValue(row["codUsuario"].ToString())),
+                        Exclusao = Convert.ToBoolean(row["Exclusao"].ToString()),
+                        Login = IsNullValue(row["login"].ToString()),
+                        Senha = IsNullValue(row["senha"].ToString())
+                    });
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                ControleLog.InsereLog(2, "USUARIO", ex.Message, DateTime.Now);
+
+            }
+            return retorno;
+
         }
         public int RetornaQuantidadeLong(string login)
         {
@@ -104,6 +133,24 @@ namespace Salus_Core.DAL
             List<Usuario> retorno = new List<Usuario> ();
             try
             {
+                _consulta = "select * from Usuario";
+                ConexaoDAL.Open();
+                DataTable dt = new DataTable();
+                foreach (DataRow row in dt.Rows) 
+                {
+                    retorno.Add(new Usuario()
+                    {
+                        AcEditar = Convert.ToBoolean(row["acEdidar"].ToString()),
+                        AcExcluir = Convert.ToBoolean(row["acExcluir"].ToString()),
+                        AcInserir = Convert.ToBoolean(row["acInserir"].ToString()),
+                        IDUsuario = int.Parse(IsNullValue(row["idUsuario"].ToString())),
+                        CODUsuario = int.Parse(IsNullValue(row["codUsuario"].ToString())),
+                        Exclusao = Convert.ToBoolean(row["Exclusao"].ToString()),
+                        Login = IsNullValue(row["login"].ToString()),
+                        Senha = IsNullValue(row["senha"].ToString())
+                    });
+
+                }
 
             }
             catch (Exception ex)
@@ -118,7 +165,36 @@ namespace Salus_Core.DAL
 
         public List<Usuario> SelecionarPorCodigo(Usuario obj)
         {
-            throw new NotImplementedException();
+            List<Usuario> retorno = new List<Usuario>();
+            try
+            {
+                _consulta = "select * from Usuario where codUsuario = " + obj.CODUsuario;
+                ConexaoDAL.Open();
+                DataTable dt = new DataTable();
+                foreach (DataRow row in dt.Rows)
+                {
+                    retorno.Add(new Usuario()
+                    {
+                        AcEditar = Convert.ToBoolean(row["acEdidar"].ToString()),
+                        AcExcluir = Convert.ToBoolean(row["acExcluir"].ToString()),
+                        AcInserir = Convert.ToBoolean(row["acInserir"].ToString()),
+                        IDUsuario = int.Parse(IsNullValue(row["idUsuario"].ToString())),
+                        CODUsuario = int.Parse(IsNullValue(row["codUsuario"].ToString())),
+                        Exclusao = Convert.ToBoolean(row["Exclusao"].ToString()),
+                        Login = IsNullValue(row["login"].ToString()),
+                        Senha = IsNullValue(row["senha"].ToString())
+                    });
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                ControleLog.InsereLog(2, "USUARIO", ex.Message, DateTime.Now);
+
+            }
+            return retorno;
         }
 
         public int RetornaMaxCodigo()
