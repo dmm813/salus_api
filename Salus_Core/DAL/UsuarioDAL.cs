@@ -42,26 +42,26 @@ namespace Salus_Core.DAL
                     "       [idNivelAcesso])" +
                     "VALUES" +
                     "(" + cod +
-                      "," + obj.Login +
-                      "," + obj.Senha +
-                      "," + obj.Exclusao +
-                      "," + obj.AcInserir +
-                      "," + obj.AcExcluir +
-                      "," + obj.AcEditar +
-                      "," + obj.IDNivelAcesso +
+                      ", '" + obj.Login + "'" +
+                      ", '" + obj.Senha +"'" +
+                      ", " + Convert.ToInt32(obj.Exclusao) +
+                      ", " + Convert.ToInt32(obj.AcInserir) +
+                      ", " + Convert.ToInt32(obj.AcExcluir) +
+                      ", " + Convert.ToInt32(obj.AcEditar) +
+                      ", " + Convert.ToInt32(obj.IDNivelAcesso) +
                     ")";
                 ConexaoDAL.Open();
 
 
                 if (ConexaoDAL.ExecutarConsulta(_consulta))
                 {
-                    Console.WriteLine("Sei La");// ControleLog.InsereLog(1, "USUARIO", "SUCESSO", DateTime.Now);
+                    Console.WriteLine("Sucesso");// ControleLog.InsereLog(1, "USUARIO", "SUCESSO", DateTime.Now);
                 }
                 ConexaoDAL.Close();
             }
             catch (Exception ex) 
             {
-                Console.WriteLine("Sei La" + ex); //ControleLog.InsereLog(1, "USUARIO", ex.Message, DateTime.Now);
+                Console.WriteLine("Erro" + ex); //ControleLog.InsereLog(1, "USUARIO", ex.Message, DateTime.Now);
                 return;
             }
 
@@ -73,23 +73,23 @@ namespace Salus_Core.DAL
             {
                 _consulta = "UPDATE [dbo].[Usuario] " +
                                "SET [login] = " + obj.Login +
-                                  ",[senha] = " + obj.Senha +
-                                  ",[exclusao] = " + obj.Exclusao +
-                                  ",[acInserir] = " + obj.AcInserir +
-                                  ",[acExcluir] = " + obj.AcExcluir +
-                                  ",[acEditar] = " + obj.AcEditar +
-                                  ",[idNivelAcesso] = " + obj.IDNivelAcesso +
-                             "WHERE codUsuario = " + obj.CODUsuario;
+                                  ", [senha] = '" + obj.Senha + "'" +
+                                  ", [exclusao] = '" + Convert.ToInt32(obj.Exclusao) +
+                                  ", [acInserir] = " + Convert.ToInt32(obj.AcInserir) +
+                                  ", [acExcluir] = " + Convert.ToInt32(obj.AcExcluir) +
+                                  ", [acEditar] = " + Convert.ToInt32(obj.AcEditar) +
+                                  ", [idNivelAcesso] = " + Convert.ToInt32(obj.IDNivelAcesso) +
+                             "WHERE codUsuario = " + Convert.ToInt32(obj.CODUsuario);
                 if (ConexaoDAL.ExecutarConsulta(_consulta))
                 {
-                    ControleLog.InsereLog(2, "USUARIO", "SUCESSO", DateTime.Now);
+                    Console.WriteLine("Sucesso");//ControleLog.InsereLog(2, "USUARIO", "SUCESSO", DateTime.Now);
                 }
             }
                 
             catch (Exception ex)
             {
 
-                ControleLog.InsereLog(2, "USUARIO", ex.Message, DateTime.Now);
+                Console.WriteLine("Erro" + ex);// ControleLog.InsereLog(2, "USUARIO", ex.Message, DateTime.Now);
                 return;
             }
 
