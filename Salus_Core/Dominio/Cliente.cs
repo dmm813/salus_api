@@ -8,29 +8,29 @@ namespace Salus_Core.Dominio
     public class Cliente
     {
         #region Atributos
-        private int idCliente;
-        private int idEmpresa;
-        private int codCliente;
-        private string nome;
-        private DateTime dataCadastro;
-        private string docIdentidade;
-        private string cpf_cnpj;
-        private string cep;
-        private string rua;
-        private string numero;
-        private string complemento;
-        private string bairro;
-        private int idMunicipio;
-        private string telefoneCel;
-        private string telefoneResidencial;
-        private string telefoneComercial;
-        private string email;
-        private bool ativo;
-        private double credito;
-        private double creditoUtilizado;
-        private double desconto;
-        private bool planoFamilia;
-        private bool exclusao;
+        private int _idCliente;
+        private int _idEmpresa;
+        private int _codCliente;
+        private string _nome;
+        private DateTime _dataCadastro;
+        private string _docIdentidade;
+        private string _cpf_cnpj;
+        private string _cep;
+        private string _rua;
+        private string _numero;
+        private string _complemento;
+        private string _bairro;
+        private int _idMunicipio;
+        private string _telefoneCel;
+        private string _telefoneResidencial;
+        private string _telefoneComercial;
+        private string _email;
+        private bool _ativo;
+        private double _credito;
+        private double _creditoUtilizado;
+        private double _desconto;
+        private bool _planoFamilia;
+        private bool _exclusao;
 
 
 
@@ -121,56 +121,56 @@ namespace Salus_Core.Dominio
 
         [Column]
         [Key]
-        public int IdCliente { get { return this.idCliente; } set { this.idCliente = value; } }
+        public int IdCliente { get { return this._idCliente; } set { this._idCliente = value; } }
         [Column]
-        public int CodCliente { get { return this.codCliente; } set { this.codCliente = value; } }
+        public int CodCliente { get { return this._codCliente; } set { this._codCliente = value; } }
         [Column]
-        public string Nome { get { return this.nome; } set { this.nome = value; } }
+        public string Nome { get { return this._nome; } set { this._nome = value; } }
         [Column(TypeName ="datetime")]
-        public DateTime DataCadastro { get { return this.dataCadastro; } set { this.dataCadastro = value; } }
+        public DateTime DataCadastro { get { return this._dataCadastro; } set { this._dataCadastro = value; } }
         [Column]
-        public string DocIdentidade { get { return this.docIdentidade; } set { this.docIdentidade = value; } }
+        public string DocIdentidade { get { return this._docIdentidade; } set { this._docIdentidade = value; } }
         [Column(name:"cpf_cnpj")]
-        public string CPFCNPJ { get { return this.cpf_cnpj; } set { this.cpf_cnpj = value; } }
+        public string CPFCNPJ { get { return this._cpf_cnpj; } set { this._cpf_cnpj = value; } }
         [Column]
-        public string CEP { get { return this.cep; } set { this.cep = value; } }
+        public string CEP { get { return this._cep; } set { this._cep = value; } }
         [Column(name: "endereco")]
-        public string Rua { get { return this.rua; } set { this.rua = value; } }
+        public string Rua { get { return this._rua; } set { this._rua = value; } }
         [Column]
-        public string Numero { get { return this.numero; } set { this.numero = value; } }
+        public string Numero { get { return this._numero; } set { this._numero = value; } }
         [Column]
-        public string Complemento { get { return this.complemento; } set { this.complemento = value; } }
+        public string Complemento { get { return this._complemento; } set { this._complemento = value; } }
         [Column]
-        public string Bairro { get { return this.bairro; } set { this.bairro = value; } }
+        public string Bairro { get { return this._bairro; } set { this._bairro = value; } }
         [Column]
-        public int IdMunicipio { get { return this.idMunicipio; } set { this.idMunicipio = value; } }
+        public int IdMunicipio { get { return this._idMunicipio; } set { this._idMunicipio = value; } }
         [Column]
-        public string TelefoneCel { get { return this.telefoneCel; } set { this.telefoneCel = value; } }
+        public string TelefoneCel { get { return this._telefoneCel; } set { this._telefoneCel = value; } }
         [Column]
-        public string TelefoneResidencial { get { return this.telefoneResidencial; } set { this.telefoneResidencial = value; } }
+        public string TelefoneResidencial { get { return this._telefoneResidencial; } set { this._telefoneResidencial = value; } }
         [Column]
-        public string TelefoneComercial { get { return this.telefoneComercial; } set { this.telefoneComercial = value; } }
+        public string TelefoneComercial { get { return this._telefoneComercial; } set { this._telefoneComercial = value; } }
         [Column]
-        public string Email { get { return this.email; } set { this.email = value; } }
+        public string Email { get { return this._email; } set { this._email = value; } }
         [Column(TypeName = "bit")]
-        public bool Ativo { get { return this.ativo; } set { this.ativo = value; } }
+        public bool Ativo { get { return this._ativo; } set { this._ativo = value; } }
         [Column(TypeName = "decimal(10,2)")]
-        public double Credito { get { return this.credito; } set { this.credito = value; } }
+        public double Credito { get { return this._credito; } set { this._credito = value; } }
         [Column(TypeName = "decimal(10,2)")]
-        public double CreditoUtilizado { get { return this.creditoUtilizado; } set { this.creditoUtilizado = value; } }
+        public double CreditoUtilizado { get { return this._creditoUtilizado; } set { this._creditoUtilizado = value; } }
         [Column(TypeName = "decimal(10,2)")]
-        public double Desconto { get { return this.desconto; } set { this.desconto = value; } }
+        public double Desconto { get { return this._desconto; } set { this._desconto = value; } }
         [Column(TypeName = "bit")]
         public bool Exclusao
         {
             get
             {
-                return exclusao;
+                return _exclusao;
             }
 
             set
             {
-                exclusao = value;
+                _exclusao = value;
             }
         }
         [Column]
@@ -178,12 +178,12 @@ namespace Salus_Core.Dominio
         {
             get
             {
-                return idEmpresa;
+                return _idEmpresa;
             }
 
             set
             {
-                idEmpresa = value;
+                _idEmpresa = value;
             }
         }
         [Column(TypeName = "bit")]
@@ -191,12 +191,12 @@ namespace Salus_Core.Dominio
         {
             get
             {
-                return planoFamilia;
+                return _planoFamilia;
             }
 
             set
             {
-                planoFamilia = value;
+                _planoFamilia = value;
             }
         }
 
