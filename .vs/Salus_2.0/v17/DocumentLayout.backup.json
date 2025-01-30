@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Projetos\\Salus_20\\Salus_2.0\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\dominio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\dominio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|c:\\projetos\\salus_20\\salus_2.0\\salus_core\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBE12CAF-FDA0-47BF-9AF3-58D86F43E58E}|Salus_Core\\Salus_Core.csproj|solutionrelative:salus_core\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\Dominio\\Cliente.cs",
+              "RelativeDocumentMoniker": "Salus_Core\\Dominio\\Cliente.cs",
+              "ToolTip": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\Dominio\\Cliente.cs",
+              "RelativeToolTip": "Salus_Core\\Dominio\\Cliente.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAYwL8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T13:11:43.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Settings.Designer.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\Settings.Designer.cs",
               "RelativeDocumentMoniker": "Salus_Core\\Settings.Designer.cs",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UsuarioDAL.cs",
               "DocumentMoniker": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\DAL\\UsuarioDAL.cs",
               "RelativeDocumentMoniker": "Salus_Core\\DAL\\UsuarioDAL.cs",
