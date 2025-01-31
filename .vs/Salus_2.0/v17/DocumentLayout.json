@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,10 +39,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -73,7 +69,7 @@
               "RelativeDocumentMoniker": "Salus_Core\\Dominio\\Cliente.cs",
               "ToolTip": "C:\\Projetos\\Salus_20\\Salus_2.0\\Salus_Core\\Dominio\\Cliente.cs",
               "RelativeToolTip": "Salus_Core\\Dominio\\Cliente.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAqwKkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAwFcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T13:11:43.003Z",
               "EditorCaption": ""

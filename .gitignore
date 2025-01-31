@@ -194,3 +194,7 @@ FakesAssemblies/
 
 /.sonarqube
 coverage.opencover.xml
+#assenblies of project
+Salus_API/obj/
+Salus_Application/obj/
+Salus_Core/obj/
