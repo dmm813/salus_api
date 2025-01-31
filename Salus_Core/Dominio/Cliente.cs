@@ -39,80 +39,80 @@ namespace Salus_Core.Dominio
         #region Contrutor
         public Cliente()
         {
-            this.idCliente = 0;
-            this.idEmpresa = 0;
-            this.codCliente = 0;
-            this.nome = "";
-            this.dataCadastro = DateTime.Now;
-            this.docIdentidade = "";
-            this.cpf_cnpj = "";
-            this.cep = "";
-            this.rua = "";
-            this.numero = "";
-            this.complemento = "";
-            this.bairro = "";
-            this.idMunicipio = 0;
-            this.telefoneCel = "";
-            this.telefoneResidencial = "";
-            this.telefoneComercial = "";
-            this.email = "";
-            this.ativo = true;
-            this.credito = 0;
-            this.creditoUtilizado = 0;
-            this.desconto = 0;
-            this.PlanoFamilia = false;
-            this.exclusao = false;
+            this._idCliente = 0;
+            this._idEmpresa = 0;
+            this._codCliente = 0;
+            this._nome = "";
+            this._dataCadastro = DateTime.Now;
+            this._docIdentidade = "";
+            this._cpf_cnpj = "";
+            this._cep = "";
+            this._rua = "";
+            this._numero = "";
+            this._complemento = "";
+            this._bairro = "";
+            this._idMunicipio = 0;
+            this._telefoneCel = "";
+            this._telefoneResidencial = "";
+            this._telefoneComercial = "";
+            this._email = "";
+            this._ativo = true;
+            this._credito = 0;
+            this._creditoUtilizado = 0;
+            this._desconto = 0;
+            this._planoFamilia = false;
+            this._exclusao = false;
 
         }
         public Cliente(string nome)
         {
-            this.idCliente = 0;
-            this.codCliente = 0;
-            this.nome = nome;
-            this.dataCadastro = DateTime.Now;
-            this.docIdentidade = "";
-            this.cpf_cnpj = "";
-            this.cep = "";
-            this.rua = "";
-            this.numero = "";
-            this.complemento = "";
-            this.bairro = "";
-            this.idMunicipio = 0;
-            this.telefoneCel = "";
-            this.telefoneResidencial = "";
-            this.telefoneComercial = "";
-            this.email = "";
-            this.ativo = true;
-            this.credito = 0;
-            this.creditoUtilizado = 0;
-            this.desconto = 0;
-            this.PlanoFamilia = false;
-            this.exclusao = false;
+            this._idCliente = 0;
+            this._codCliente = 0;
+            this._nome = nome;
+            this._dataCadastro = DateTime.Now;
+            this._docIdentidade = "";
+            this._cpf_cnpj = "";
+            this._cep = "";
+            this._rua = "";
+            this._numero = "";
+            this._complemento = "";
+            this._bairro = "";
+            this._idMunicipio = 0;
+            this._telefoneCel = "";
+            this._telefoneResidencial = "";
+            this._telefoneComercial = "";
+            this._email = "";
+            this._ativo = true;
+            this._credito = 0;
+            this._creditoUtilizado = 0;
+            this._desconto = 0;
+            this._planoFamilia = false;
+            this._exclusao = false;
         }
         public Cliente(int cod)
         {
-            this.idCliente = 0;
-            this.codCliente = cod;
-            this.nome = "";
-            this.dataCadastro = DateTime.Now;
-            this.docIdentidade = "";
-            this.cpf_cnpj = "";
-            this.cep = "";
-            this.rua = "";
-            this.numero = "";
-            this.complemento = "";
-            this.bairro = "";
-            this.idMunicipio = 0;
-            this.telefoneCel = "";
-            this.telefoneResidencial = "";
-            this.telefoneComercial = "";
-            this.email = "";
-            this.ativo = true;
-            this.credito = 0;
-            this.creditoUtilizado = 0;
-            this.desconto = 0;
-            this.PlanoFamilia = false;
-            this.exclusao = false;
+            this._idCliente = 0;
+            this._codCliente = cod;
+            this._nome = "";
+            this._dataCadastro = DateTime.Now;
+            this._docIdentidade = "";
+            this._cpf_cnpj = "";
+            this._cep = "";
+            this._rua = "";
+            this._numero = "";
+            this._complemento = "";
+            this._bairro = "";
+            this._idMunicipio = 0;
+            this._telefoneCel = "";
+            this._telefoneResidencial = "";
+            this._telefoneComercial = "";
+            this._email = "";
+            this._ativo = true;
+            this._credito = 0;
+            this._creditoUtilizado = 0;
+            this._desconto = 0;
+            this._planoFamilia = false;
+            this._exclusao = false;
         }
 
         #endregion
