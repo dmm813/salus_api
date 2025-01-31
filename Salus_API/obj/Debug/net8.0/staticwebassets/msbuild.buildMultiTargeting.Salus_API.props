@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Salus_API.props" />
-</Project>
