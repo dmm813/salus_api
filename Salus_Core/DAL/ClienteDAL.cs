@@ -20,23 +20,23 @@ namespace Salus_Core.DAL
             try
             {
                 _consulta = "UPDATE [dbo].[Cliente]" +
-                    "   SET [nome] = " + obj.Nome +
-                    "      ,[dataCadastro] = " + obj.DataCadastro +
-                    "      ,[docIdentidade] = " + obj.DocIdentidade +
-                    "      ,[cpf_cnpj] = " + obj.CPFCNPJ +
-                    "      ,[CEP] = " + obj.CEP +
-                    "      ,[endereco] = " + obj.Rua +
-                    "      ,[numero] = " + obj.Numero +
-                    "      ,[complemento] = " + obj.Complemento +
-                    "      ,[bairro] = " + obj.Bairro +
+                    "   SET [nome] = '" + obj.Nome + "'"+
+                    "      ,[dataCadastro] = '" + obj.DataCadastro +"'"+
+                    "      ,[docIdentidade] = '" + obj.DocIdentidade +"'"+
+                    "      ,[cpf_cnpj] = '" + obj.CPFCNPJ +"'"+
+                    "      ,[CEP] = '" + obj.CEP +"'"+
+                    "      ,[endereco] = '" + obj.Rua +"'"+
+                    "      ,[numero] = '" + obj.Numero +"'"+
+                    "      ,[complemento] = '" + obj.Complemento +"'"+
+                    "      ,[bairro] = '" + obj.Bairro +"'"+
                     "      ,[idMunicipio] = " + obj.IdMunicipio +
-                    "      ,[telefoneCel] = " + obj.TelefoneCel +
-                    "      ,[telefoneResidencial] = " + obj.TelefoneResidencial +
-                    "      ,[telefoneComercial] = " + obj.TelefoneComercial +
-                    "      ,[email] = " + obj.Email +
+                    "      ,[telefoneCel] = '" + obj.TelefoneCel +"'"+
+                    "      ,[telefoneResidencial] = '" + obj.TelefoneResidencial +"'"+
+                    "      ,[telefoneComercial] = '" + obj.TelefoneComercial +"'"+
+                    "      ,[email] = '" + obj.Email +"'"+
                     "      ,[ativo] = " + obj.Ativo +
-                    "      ,[exclusao] = " +
-                    "      ,[idEmpresa] = " +
+                    "      ,[exclusao] = " + obj.Exclusao +
+                    "      ,[idEmpresa] = " + obj.IdEmpresa +
                     " WHERE codcliente = " + obj.CodCliente;
 
                 if (ConexaoDAL.ExecutarConsulta(_consulta))
@@ -84,22 +84,22 @@ namespace Salus_Core.DAL
                     "[exclusao]," +
                     "[idEmpresa]," +
                     "[planoFamilia])  VALUES (" +
-                    obj.CodCliente + ", " +
-                    obj.Nome + ", " +
-                    obj.DataCadastro + ", " +
-                    obj.DocIdentidade + ", " +
-                    obj.CPFCNPJ + ", " +
-                    obj.CEP + ", " +
-                    obj.Rua + ", " +
-                    obj.Numero + ", " +
-                    obj.Complemento + ", " +
-                    obj.Bairro + ", " +
-                    obj.IdMunicipio + ", " +
-                    obj.TelefoneCel + ", " +
-                    obj.TelefoneCel + ", " +
-                    obj.TelefoneResidencial + ", " +
-                    obj.TelefoneComercial + ", " +
-                    obj.Email + ", " +
+                    obj.CodCliente + ", '" +
+                    obj.Nome +"'"+ ", '" +
+                    obj.DataCadastro +"'"+ ", '" +
+                    obj.DocIdentidade+"'" + ", '" +
+                    obj.CPFCNPJ +"'"+ ", '" +
+                    obj.CEP+ "'"+ ", '" +
+                    obj.Rua +"'"+ ", " +
+                    obj.Numero + ", '" +
+                    obj.Complemento +"'"+ ",' " +
+                    obj.Bairro +"'"+ ", " +
+                    obj.IdMunicipio + ", '" +
+                    obj.TelefoneCel+"'" + ", '" +
+                    obj.TelefoneCel +"'"+ ", " +
+                    obj.TelefoneResidencial + ", '" +
+                    obj.TelefoneComercial +"'"+ ", '" +
+                    obj.Email +"'"+ ", " +
                     obj.Ativo + ", 0,0,0" +
                     obj.Exclusao + ", " +
                     obj.IdEmpresa + ", 0" +
