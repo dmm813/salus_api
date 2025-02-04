@@ -10,7 +10,8 @@ namespace Salus_2._0.Service
     {
         private readonly AppDBContext _context;
         private readonly IPasswordService _passwordService;
-        public AuthService(AppDBContext context, IPasswordService passwordService) {
+        public AuthService(AppDBContext context, IPasswordService passwordService)
+        {
             _context = context;
             _passwordService = passwordService;
         }
@@ -19,7 +20,7 @@ namespace Salus_2._0.Service
             var responseData = new BaseDataResponse<RegisterDTO>();
             try
             {
-                if(userExist(register))
+                if (userExist(register))
                 {
                     responseData.Sucesso = false;
                     responseData.Mensagem = "Usuário já cadastrado";
@@ -72,7 +73,7 @@ namespace Salus_2._0.Service
                 }
 
                 var token = _passwordService.CreateToken(register);
-                
+
                 responseData.Dados = token;
                 responseData.Mensagem = "Usuário logado com sucesso!";
 

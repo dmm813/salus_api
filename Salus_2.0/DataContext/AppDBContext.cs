@@ -22,9 +22,9 @@ namespace Salus_2._0.DataContext
          *      update-database 
          * 
          */
-        
-         public DbSet<UsuarioModel> Usuario { get; set; }
-         public DbSet<RegisterModel> Register { get; set; }
+
+        public DbSet<UsuarioModel> Usuario { get; set; }
+        public DbSet<RegisterModel> Register { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

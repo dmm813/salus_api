@@ -55,7 +55,7 @@ namespace Salus_2._0.Service
                 signingCredentials: cred
             );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);            
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

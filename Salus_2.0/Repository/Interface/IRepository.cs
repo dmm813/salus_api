@@ -1,5 +1,4 @@
-﻿using Salus_2._0.Models;
-using System.Linq.Expressions;
+﻿using System.Linq.Expressions;
 
 namespace Salus_2._0.Repository
 {

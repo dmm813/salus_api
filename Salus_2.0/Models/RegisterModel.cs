@@ -4,7 +4,7 @@ namespace Salus_2._0.Models
 {
     public class RegisterModel
     {
-        public int Id {  get; set; }
+        public int Id { get; set; }
         public required string Email { get; set; }
         public required string Usuario { get; set; }
         public NivelAcessoEnum Cargo { get; set; }

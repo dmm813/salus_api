@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Salus_2._0.DTO;
 using Salus_2._0.Service.Interface;
 
@@ -10,7 +9,8 @@ namespace Salus_2._0.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _auth;
-        public AuthController(IAuthService auth) {
+        public AuthController(IAuthService auth)
+        {
             _auth = auth;
         }
 

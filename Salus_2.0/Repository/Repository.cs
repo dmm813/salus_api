@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Salus_2._0.DataContext;
-using Salus_2._0.Models;
-using System.Diagnostics.Eventing.Reader;
 using System.Linq.Expressions;
 namespace Salus_2._0.Repository
 {
@@ -41,7 +39,8 @@ namespace Salus_2._0.Repository
             _entities.Update(entity);
         }
 
-        public async Task Delete(int id) {
+        public async Task Delete(int id)
+        {
             var entity = await _entities.FindAsync(id);
             _entities.Remove(entity);
         }
