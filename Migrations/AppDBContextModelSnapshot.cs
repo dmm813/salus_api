@@ -22,6 +22,58 @@ namespace Salus_2._0.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Salus_2._0.Models.ClienteModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Bairro")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CEP")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CPFCNPJ")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Cod")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Complemento")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DocIdentidade")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Exclusao")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("IdMunicipio")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Numero")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Rua")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cliente", (string)null);
+                });
+
             modelBuilder.Entity("Salus_2._0.Models.ContatoModel", b =>
                 {
                     b.Property<int>("Id")
@@ -33,6 +85,9 @@ namespace Salus_2._0.Migrations
                     b.Property<int?>("ClienteId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ClienteModelId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Contato")
                         .HasColumnType("nvarchar(max)");
 
@@ -42,6 +97,8 @@ namespace Salus_2._0.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ClienteId");
+
+                    b.HasIndex("ClienteModelId");
 
                     b.ToTable("Contato");
                 });
@@ -59,9 +116,7 @@ namespace Salus_2._0.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PessoaModel");
-
-                    b.UseTptMappingStrategy();
+                    b.ToTable("Pessoa");
                 });
 
             modelBuilder.Entity("Salus_2._0.Models.RegisterModel", b =>
@@ -138,65 +193,22 @@ namespace Salus_2._0.Migrations
                     b.ToTable("Usuario");
                 });
 
-            modelBuilder.Entity("Salus_2._0.Models.ClienteModel", b =>
-                {
-                    b.HasBaseType("Salus_2._0.Models.PessoaModel");
-
-                    b.Property<bool>("Ativo")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Bairro")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CEP")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CPFCNPJ")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Complemento")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DataCadastro")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("DocIdentidade")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Exclusao")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("IdMunicipio")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Numero")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Rua")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.ToTable("Cliente");
-                });
-
             modelBuilder.Entity("Salus_2._0.Models.ContatoModel", b =>
                 {
                     b.HasOne("Salus_2._0.Models.PessoaModel", "Cliente")
                         .WithMany("ContatoModels")
                         .HasForeignKey("ClienteId");
 
+                    b.HasOne("Salus_2._0.Models.ClienteModel", null)
+                        .WithMany("ContatoModels")
+                        .HasForeignKey("ClienteModelId");
+
                     b.Navigation("Cliente");
                 });
 
             modelBuilder.Entity("Salus_2._0.Models.ClienteModel", b =>
                 {
-                    b.HasOne("Salus_2._0.Models.PessoaModel", null)
-                        .WithOne()
-                        .HasForeignKey("Salus_2._0.Models.ClienteModel", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("ContatoModels");
                 });
 
             modelBuilder.Entity("Salus_2._0.Models.PessoaModel", b =>

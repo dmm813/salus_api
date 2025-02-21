@@ -12,7 +12,32 @@ namespace Salus_2._0.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "PessoaModel",
+                name: "Cliente",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DocIdentidade = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CPFCNPJ = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CEP = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Rua = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Numero = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Complemento = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Bairro = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IdMunicipio = table.Column<int>(type: "int", nullable: false),
+                    Ativo = table.Column<bool>(type: "bit", nullable: false),
+                    Exclusao = table.Column<bool>(type: "bit", nullable: false),
+                    Cod = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Cliente", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Pessoa",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -21,7 +46,7 @@ namespace Salus_2._0.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PessoaModel", x => x.Id);
+                    table.PrimaryKey("PK_Pessoa", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -63,35 +88,6 @@ namespace Salus_2._0.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Cliente",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DocIdentidade = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CPFCNPJ = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CEP = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Rua = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Numero = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Complemento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Bairro = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IdMunicipio = table.Column<int>(type: "int", nullable: false),
-                    Ativo = table.Column<bool>(type: "bit", nullable: false),
-                    Exclusao = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Cliente", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Cliente_PessoaModel_Id",
-                        column: x => x.Id,
-                        principalTable: "PessoaModel",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Contato",
                 columns: table => new
                 {
@@ -99,15 +95,21 @@ namespace Salus_2._0.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Tipo = table.Column<int>(type: "int", nullable: false),
                     ClienteId = table.Column<int>(type: "int", nullable: true),
-                    Contato = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Contato = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ClienteModelId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Contato", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Contato_PessoaModel_ClienteId",
+                        name: "FK_Contato_Cliente_ClienteModelId",
+                        column: x => x.ClienteModelId,
+                        principalTable: "Cliente",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Contato_Pessoa_ClienteId",
                         column: x => x.ClienteId,
-                        principalTable: "PessoaModel",
+                        principalTable: "Pessoa",
                         principalColumn: "Id");
                 });
 
@@ -115,14 +117,16 @@ namespace Salus_2._0.Migrations
                 name: "IX_Contato_ClienteId",
                 table: "Contato",
                 column: "ClienteId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Contato_ClienteModelId",
+                table: "Contato",
+                column: "ClienteModelId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Cliente");
-
             migrationBuilder.DropTable(
                 name: "Contato");
 
@@ -133,7 +137,10 @@ namespace Salus_2._0.Migrations
                 name: "Usuario");
 
             migrationBuilder.DropTable(
-                name: "PessoaModel");
+                name: "Cliente");
+
+            migrationBuilder.DropTable(
+                name: "Pessoa");
         }
     }
 }

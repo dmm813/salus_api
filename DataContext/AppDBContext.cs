@@ -27,10 +27,17 @@ namespace Salus_2._0.DataContext
         public DbSet<RegisterModel> Register { get; set; }
         public DbSet<ClienteModel> Cliente {  get; set; }
         public DbSet<ContatoModel> Contato { get; set; }
+        public DbSet<PessoaModel> Pessoa { get; set; }
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
         //    modelBuilder.Entity<UsuarioModel>().Metadata.SetIsTableExcludedFromMigrations(true);
         //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ClienteModel>()
+                .ToTable("Cliente")
+                .HasBaseType((Type)null); // Remova a tabela base
+        }
 
     }
 }
