@@ -3,15 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Salus_2._0.Models
 {
-    public class ClienteModel
+    [Table("Cliente")]
+    public class ClienteModel:PessoaModel
     {
         #region Propriedades
 
-        [Key]
-        public int Id { get; set; }
-        
-        public int Cod { get; set; }
-        
+                
         public string? Nome { get; set; }
         
         public DateTime DataCadastro { get; set; }
@@ -36,6 +33,6 @@ namespace Salus_2._0.Models
         
         public bool Exclusao{ get; set;}
         #endregion
-        public List<ContatoModel>? Contatos { get; set; }
+        
     }
 }
